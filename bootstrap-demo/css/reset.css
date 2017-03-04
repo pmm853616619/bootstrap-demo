@@ -1,0 +1,98 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+html,body {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+input{
+	border:1px solid #b0b0b0;
+	padding:3px 5px 4px;
+	color:#979797;
+	width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+a,a:hover,a:visited,a:link,a:active{
+	text-decoration: none;
+}
+body{
+	background-color: #E0EEE0;
+	color: #333;
+	font-size: 13px;
+}
+/*上*/
+.clear-top-2{
+	margin-top:2px;
+}
+.clear-top-5{
+	margin-top:5px;
+}
+.clear-ptop-5{
+	padding-top: 5px;
+}
+.clear-top-10{
+	margin-top:10px;
+}
+.clear-ptop-10{
+	padding-top: 10px;
+}
+.clear-top-15{
+	margin-top:15px;
+}
+
+/*下*/
+.clear-bottom-5{
+	margin-bottom:5px;
+}
+.clear-bottom-10{
+	margin-bottom:10px;
+}
+
+/*左*/
+.clear-left-5{
+	margin-left:5px;
+}
+.clear-left-10{
+	margin-left:10px;
+}
+
+/*右*/
+.clear-right-{
+
+}
+
+/*背景颜色*/
+.back-color-main{
+	background-color:#E0EEEE;
+	border: 1px solid #E5E5E5;
+}
+.back-color-nav{
+	background-color:#ADD8E6;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Swipe</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/swipe.css">
+	<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8" style="height:230px;width: 850px;border:1px solid red">
+				<div class="my_banner">
+					<div class="swipe" id="mySwipe">
+						<div class="swipe-wrap">
+						    <div><a href="javascript:;"><img class="img-responsive" src="../images/psb.jpg" /></a></div>
+						    <div><a href="javascript:;"><img class="img-responsive" src="../images/psb.jpg" /></a></div>
+						    <div><a href="javascript:;"><img class="img-responsive" src="../images/psb.jpg" /></a></div>
+					    </div>
+					</div>
+					<ul id="position">
+					    <li class="cur"></li>
+					    <li class=""></li>
+					    <li class=""></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/swipe.js"></script>
+	<script type="text/javascript">
+		var bullets = document.getElementById('position').getElementsByTagName('li');
+      	var banner = Swipe(document.getElementById('mySwipe'), {
+       		auto: 1500,
+        	continuous: true,
+        	disableScroll:false,
+        	callback: function(pos) {
+          		var i = bullets.length;
+          		while (i--) {
+            		bullets[i].className = ' ';
+          		}
+          		bullets[pos].className = 'cur';
+        	}
+      	});
+	</script>
+</body>
+</html>

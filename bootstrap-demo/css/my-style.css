@@ -1,0 +1,183 @@
+@import url(reset.css);
+@import url(info-style.css);
+@import url(personal-style.css);
+
+/*logo大小*/
+.logo{
+    width:50px;
+    height:50px;
+    float: left;
+}
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+.name{
+	margin-top:15px; 
+    margin-left:5px; 
+    float: left;
+}
+.name span{
+	font-size: 20px;
+	color:#fff;
+}
+
+/*右边导航栏*/
+.my-container{
+	margin-top:10px; 
+	position:relative;
+}
+.my-clr{
+	clear: both;
+}
+.my-content{
+	position:relative;
+}
+.mynav-menu li{
+	width: 120px;
+    height: 40px;
+    overflow: hidden;
+    display: block;
+    background: #fff;
+    margin-bottom: 5px;
+    border-left: 2px solid #000;
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+.mynav-menu li:last-child{
+    margin-bottom: 0px;
+}
+.mynav-menu li a{
+    text-align: left;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    position:relative;
+}
+.mynav-icon{
+	margin-top:5px; 
+    font-size: 14px;
+    text-shadow: 0px 0px 1px #333;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    width: 20px;
+    left: 2px;
+    text-align: center;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+.mynav-content{
+    position: absolute;
+    left: 30px;
+    width: 80px;
+    height: 30px;
+    top: 8px;
+}
+.mynav-main{
+    font-size: 12px;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+.mynav-sub{
+	margin-top:2px; 
+    font-size: 10px;
+    color: #52c4fe;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear; 
+}
+
+.mynav-menu li:hover{
+    border-color: #fff004;
+    background: #000;
+}
+.mynav-menu li:hover .mynav-icon{
+    color: #fff004;
+    text-shadow: 0px 0px 1px #fff004;
+    font-size: 14px;
+}
+.mynav-menu li:hover .mynav-main{
+    color: #fff004;
+    font-size: 14px;
+}
+.mynav-menu li:hover .mynav-sub{
+    color: #fff;
+    font-size: 11px;
+}
+/*右边导航栏*/
+
+/*banner*/
+.ban-main{
+    width: 850px;
+	height:232px;
+}
+.my_banner{
+    position:relative;
+    width:100%;
+    margin:0; 
+    padding:0;
+}
+.my_banner .swipe{
+    overflow: hidden;
+    visibility: hidden;
+    position:relative;
+}
+.my_banner .swipe-wrap{
+    overflow:hidden;
+    position:relative;
+}
+.my_banner .swipe-wrap > div {
+    float: left;
+    width: 100%;
+    position:relative;
+}
+#position{ 
+    position:absolute; 
+    bottom:0; right:0; 
+    padding-right:8px; 
+    margin:0; 
+    background:#000; 
+    opacity: 0.4; 
+    width:100%; 
+    filter: alpha(opacity=50);
+    text-align:right;
+}
+#position li{
+    width:10px;
+    height:10px;
+    margin:0 2px;
+    display:inline-block;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background-color:#AFAFAF;
+}
+#position li.cur{
+    background-color:#FF0000;
+}
+.img-responsive { 
+    display: block; 
+    max-width: 100%; 
+    height: 220px;
+    width: 850px;
+}
+
+/*底部*/
+.footer{
+    
+}
